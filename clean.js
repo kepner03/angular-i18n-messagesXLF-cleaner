@@ -44,7 +44,7 @@ function receivedText() {
       document.getElementById('editor').value = newText9 ;
       break;
     case "clean":
-      var filename = prompt("Download cleaned file", "messages.xfl");
+      var filename = prompt("Download cleaned file", "messages.xlf");
       var blob = new Blob([newText9], {
         type: "text/plain;charset=utf-8"
       });
@@ -66,7 +66,7 @@ function receivedText() {
         let text2 = text1.replace(/(<\/source>)/ig, "");
         return source + '\n\t<target>'+text2+'_test</target>';
       });
-      var filename = prompt("Download cleaned test file", "messages.test.xfl");
+      var filename = prompt("Download cleaned test file", "messages.test.xlf");
       var blob = new Blob([newText10], {
         type: "text/plain;charset=utf-8"
       });
