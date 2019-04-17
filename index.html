@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="filesaver.min.js"></script>
+<script src="clean.js"></script>
+
+</head>
+<body>
+<h3>Choose your messages.xlf you want to clean up from context-group texts.</h3>
+
+<input type="file" class="btn" id="fileinput"/>
+<input type='button' class="btn" value='Review cleaned file' onclick='handleFileSelect("review");'>
+<input type='button' class="btn" value='Clean & Download' onclick='handleFileSelect("clean");'>
+<input type='button' class="btn" value='Review test target file' onclick='handleFileSelect("review_test");'>
+<input type='button' class="btn" value='Generate test file' onclick='handleFileSelect("generate_test");'>
+<textarea id="editor" class="review" rows="500" cols="500" style="border:none;"></textarea>
+</body>
+</html>
